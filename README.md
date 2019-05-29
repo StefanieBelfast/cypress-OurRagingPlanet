@@ -41,4 +41,8 @@ Visual Studio Code
 # TEST
 I'm testing features on this website  https://orp.ev.openindustry.in/#/s/ee5b6ff3-5d4e-4da1-b399-96432e145f66
 
-I did the test site by site..
+I did the test site by site, I did 3 tests 
+
+countItem.js
+clickItem.js
+map.js

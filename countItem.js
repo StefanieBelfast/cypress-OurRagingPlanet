@@ -15,6 +15,8 @@ describe('check/count items', function () {
   })
 
     it('check items', () => {
+        //cy.get('.vis-custom-time')
+        cy.get('.panel-page__icon-symbol')
         cy.get('.panel-page__phenomenon-header').contains('Hurricane Storm Surge')
         cy.get('.panel-page__caption-header').contains('Notes')
         cy.get('[name="play"]').contains('PLAY')//.click()

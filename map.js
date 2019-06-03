@@ -5,11 +5,18 @@ describe('map', function () {
     })
 
     it('Item', () => {
-        cy.get('[src="https://mo.ev.openindustry.in/fat-orp-deploy/cdn/dist-b035268c81ada6e61b23098d733948f2594491ef/images/leaflet/focal-point/marker-icon.png"]')
+        cy.get('.leaflet-pane')
+        .click(949,382)
+        .click(941,390)
+        .click(961,402)
+        
+        .click(402,402)
+cy.get('.leaflet-popup').contains('Mid and')
     })
 
     it('countItem', () => {
-        cy.get('.leaflet-marker-icon')
+        cy.get('[title="Glenlough Community Centre"]')
+        cy.get('.leaflet-popover-container')
     })
 
     it('Zoom in/out', () => {

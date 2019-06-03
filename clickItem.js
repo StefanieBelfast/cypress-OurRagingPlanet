@@ -29,7 +29,8 @@ describe('click items', function () {
 
         cy.get('.mapdialog-wrapper').click()
         cy.contains('Choose Layers')
-        cy.get('[id="layer-box-school-locations"]')
+        //cy.get('[id="layer-box-school-locations"]')
+        cy.get('.layer-box-wrapper')
         //cy.get('[for="layer-box-school-locations"]').click()
         //cy.get('[title="Sports Facility"]').click()
     })

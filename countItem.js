@@ -1,4 +1,4 @@
-describe('check/count items', function () {
+describe('count items', function () {
     beforeEach(function () {
         cy.visit('https://orp.ev.openindustry.in/#/s/ee5b6ff3-5d4e-4da1-b399-96432e145f66')
         .wait(500)
@@ -12,6 +12,9 @@ describe('check/count items', function () {
       cy.get('.menu').should('have.length',1)
       cy.get('.vis-panel').should('have.length',8)
       cy.get('.vis-major').should('have.length',2)
+      cy.get('.leaflet-pane').should('have.length',7)
+      cy.get('.leaflet-marker-pane').should('have.length',1)
+      //cy.get('.leaflet-interactive')
   })
 
     it('check items', () => {

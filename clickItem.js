@@ -1,4 +1,4 @@
-describe('check/count items', function () {
+describe('click items', function () {
     beforeEach(function () {
         cy.visit('https://orp.ev.openindustry.in/#/s/ee5b6ff3-5d4e-4da1-b399-96432e145f66')
         .wait(500)
@@ -28,15 +28,16 @@ describe('check/count items', function () {
     it('mapDialog',() => {
 
         cy.get('.mapdialog-wrapper').click()
-        cy.contains('div','[title="Focal Point"]').click()
-        cy.get('[title="School"]').click()
-        cy.get('[title="Sports Facility"]').click()
+        cy.contains('Choose Layers')
+        cy.get('[id="layer-box-school-locations"]')
+        //cy.get('[for="layer-box-school-locations"]').click()
+        //cy.get('[title="Sports Facility"]').click()
     })
 
 
     it('Dashboard', () => {
         cy.get('[href="/panel"]').contains('Dashboard').click()
-        cy.url().should('include', '/panel')
+        //cy.url().should('include', '/panel')
     //  stack, because of a new Page"Login"
     })
 

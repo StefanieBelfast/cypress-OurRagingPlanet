@@ -8,7 +8,7 @@ describe('click items', function () {
         cy.get('[name="play"]').click()
     })
 
-    it('NO NEWS', () => {
+    it('process button NO NEWS', () => {
         cy.get('#clickNewsFeed').click()
         //.contains('<h1>Headline</h1>')
         cy.get('.feed-icon')
@@ -16,16 +16,16 @@ describe('click items', function () {
         cy.get('#next').contains('Next')
     })
 
-    it('Feedbackbutton', () => {
+    it('process Feedbackbutton', () => {
         cy.get('[src="https://mo.ev.openindustry.in/fat-orp-deploy/cdn/dist-b035268c81ada6e61b23098d733948f2594491ef/images/assist-round.png"]').click()
         //.contains('<h1>Assistance</h1>')
     
     })
-    it('Helpbutton', () => {
+    it('process Helpbutton', () => {
         cy.get('[src="https://mo.ev.openindustry.in/fat-orp-deploy/cdn/dist-b035268c81ada6e61b23098d733948f2594491ef/images/help-round.png"]')
     })
 
-    it('mapDialog',() => {
+    it('process button(mapDialog) right top',() => {
 
         cy.get('.mapdialog-wrapper').click()
         cy.contains('Choose Layers')
@@ -36,7 +36,7 @@ describe('click items', function () {
     })
 
 
-    it('Dashboard', () => {
+    it('process button "Dashboard"', () => {
         cy.get('[href="/panel"]').contains('Dashboard').click()
         //cy.url().should('include', '/panel')
     //  stack, because of a new Page"Login"

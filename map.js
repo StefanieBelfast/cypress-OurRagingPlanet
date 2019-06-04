@@ -9,16 +9,13 @@ describe('map', function () {
         .click(775,290)
         .contains('Bus Stop')
     })
-
-    it('Item2', () => {
-        cy.get('#map')
-        .click(949,382)
-        .click(941,390)
-        .click(961,402)
-        
-        .click(402,402)
+    it('Item', () => {
+        cy.get('.leaflet-map')
+        .click({x:961,y:402, force: true})
         .contains('Bus Stop')
     })
+
+    
 
     it('countItem', () => {
         cy.get('[title="Glenlough Community Centre"]')

@@ -25,7 +25,7 @@ describe('map', function () {
         cy.get('.leaflet-popover-container')
     })
 
-    it('Zoom in/out', () => {
+    it('process zooming in/out', () => {
         cy.get('.leaflet-control-zoom')
         cy.get('.leaflet-control-zoom-out').click()
         cy.get('.leaflet-control-zoom-out').click()
